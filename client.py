@@ -3,7 +3,16 @@ import socket
 import pickle
 from tabulate import tabulate
 
-alias = input('Who are you >>> ')
+class textcolor:
+
+    BLUE = '\033[94m'
+    GREEN = '\033[92m'
+    WARNING = '\033[93m'
+    FAIL = '\033[91m'
+    RESET = '\033[0m'
+
+
+alias = input(textcolor.BLUE + 'Who are you >>> ' + textcolor.RESET)
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 client.connect(('127.0.0.1', 59001))
 
@@ -27,12 +36,20 @@ def client_receive():
 def client_send():
     while True:
 
-        room = input('input room name >>')
-        light = input('input light ON/OFF >>')
-        IoT =[room, light]
-        data_string = pickle.dumps(IoT)
-        client.send(data_string)
-
+        room = input(textcolor.BLUE + 'input room name >>' + textcolor.RESET)
+        light = input(textcolor.BLUE + 'input light ON/OFF >>' +textcolor.RESET)
+        if light in ('ON', 'on', 'OFF', 'off'):
+            IoT = [room, light]
+            data_string = pickle.dumps(IoT)
+            client.send(data_string)
+            print('-----------------------------------------------')
+            print(textcolor.GREEN + 'Your inputs are successfully sent to the Server' + textcolor.RESET)
+            print('-----------------------------------------------')
+        else:
+            print('-----------------------------------------------')
+            print(textcolor.FAIL + 'The Server not accepted you inputs' + textcolor.RESET)
+            print(textcolor.WARNING + 'you input wrong data, light should be On or Off' + textcolor.RESET)
+            print('-----------------------------------------------')
 
 
 receive_thread = threading.Thread(target=client_receive)

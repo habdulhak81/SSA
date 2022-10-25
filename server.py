@@ -3,6 +3,15 @@ import socket
 from tabulate import tabulate
 import pickle
 
+
+class textcolor:
+    BLUE = '\033[94m'
+    GREEN = '\033[92m'
+    WARNING = '\033[93m'
+    FAIL = '\033[91m'
+    RESET = '\033[0m'
+
+
 host = '127.0.0.1'
 port = 59001
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -24,17 +33,17 @@ def handle_client(client):
 
             print(tabulate(IoT, headers=["Room", "Light"]))
             print('-----------------------------')
-            print('Received by client', repr(data_arr))
+            print(textcolor.BLUE + 'Received by client', repr(data_arr) + textcolor.RESET)
 
         except:
-            print('Error here in server!')
+            print(textcolor.FAIL +'Error here in server!' + textcolor.RESET)
             client.close()
             break
 
 
 def receive():
     while True:
-        print('Server is running and listening ...')
+        print(textcolor.WARNING + 'Server is running and listening ...' + textcolor.RESET)
         client, address = server.accept()
         print(f'connection is established with {str(address)}')
 
@@ -49,7 +58,7 @@ def receive():
 
         print(tabulate(IoT, headers=["Room", "Light"]))
         print('----------------------')
-        print('Received by Client', repr(data_arr))
+        print(textcolor.BLUE + 'Received by Client', repr(data_arr) + textcolor.RESET)
 
         thread = threading.Thread(target=handle_client, args=(client,))
         thread.start()

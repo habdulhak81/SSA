@@ -1,4 +1,4 @@
-<<<<<<< patch-1
+
 # SSA
 Secure Architecture Coding output
 
@@ -11,7 +11,7 @@ Elizabeth Cook,
 Haseeb Abdulhak,
 Nils Linhoff
 
-<<<<<<< patch-1
+
 # Objective:
 This assignment is to demonstrate the interactions between a smart server device (server.py) and client device (client.py). 
 
@@ -41,7 +41,7 @@ Pickle
 Threading
 Socket
 
-<<<<<<< patch-1
+
 # Installation & Run
 Install server.py and client.py files
 Install all libraries required
@@ -58,7 +58,8 @@ Install all libraries required
 -	Message will display ‘Your inputs are successfully sent to the server’ showing the action as been completed
 -	Check the server terminal for information of each room and whether the light is ‘on’ or ‘off’
 -	This process can be repeated for each room 
-A video demonstration has also been provided to show this process in action
+A video demonstration has also been provided to show this process in action:
+[Demo Video](Coding_output_demo.mp4)
 
 # Security Features 
 Socket programming has been used to create the connection between client and server devices

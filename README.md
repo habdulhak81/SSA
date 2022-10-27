@@ -1,7 +1,3 @@
-
-# SSA
-Secure Architecture Coding output
-
 # SSA: Secure Architecture Coding output
 
 Goup 1:
@@ -11,14 +7,7 @@ Haseeb Abdulhak,
 Nils Linhoff
 
 
-# Objective:
-This assignment is to demonstrate the interactions between a smart server device (server.py) and client device (client.py). 
 
-A prototype server and client have been created which replicates an Amazon echo controller and smart light client devices. The client device controls turning light switches on and off for each room and sends the information to the server which then knows which rooms have lights switched on or off.
-
-# Language Used: 
-Python 3.10
-=======
 ### Introduction
 
 ### Application
@@ -31,7 +20,7 @@ This assignment is to demonstrate the interactions between a smart server device
 A prototype server and client had been created which replicates an Amazon echo controller and smart light client devices. The client device controls turning light switches on and off for each room and sends the information to the server which then knows which rooms have lights switched on or off.
 
 # Language Used: 
-Python 2.7???
+Python 3.10
 
 
 # Libraries Used: 
@@ -88,18 +77,18 @@ Real Python (2022). Socket Programming in Python (Guide). Available at: https://
 
 
 =======
-# Installation
+ Installation
 Install server.py and client.py files
 Install all libraries required
  
-# Run
+Run
 
-# Assumptions 
+Assumptions 
 
-# Security Features 
+Security Features 
 
-# Test
+Test
 
-# References 
+References 
 Real Python (2022). Socket Programming in Python (Guide). Available at: https://realpython.com/python-sockets/ 
 

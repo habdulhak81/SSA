@@ -2,9 +2,8 @@
 # SSA
 Secure Architecture Coding output
 
-=======
 # SSA: Secure Architecture Coding output
->>>>>>> main
+
 Goup 1:
 Abidemi Adelakun,
 Elizabeth Cook,
@@ -82,6 +81,11 @@ Our design document stated the use of a speaker client device; however it was di
 
 # References
 Real Python (2022). Socket Programming in Python (Guide). Available at: https://realpython.com/python-sockets/ 
+
+
+
+
+
 
 =======
 # Installation

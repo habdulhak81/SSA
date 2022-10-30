@@ -50,7 +50,9 @@ Data that is input into the client protype is validated and only certain data wi
 
 # Security Considerations
 The devices should be run using a secure network that does not use default credentials
+
 Both client and server devices will be updated regularly to include security patches 
+
 Remote access to the client application will force default password change and strong credentials 
 
 # Testing

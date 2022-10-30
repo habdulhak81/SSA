@@ -49,6 +49,8 @@ Messages are transported using TCP in socket programming, SSL/TLS should be adde
 Data that is input into the client protype is validated and only certain data will be accepted. This prevents against SQL injection to the server and buffer overflow
 
 # Security Considerations
+As discussed in the design document, there are further vulnerabilities that these systems may be suceptable to that must also be considered. These security contorls are not featured in the socket programme prototype but should be included for future development.
+
 The devices should be run using a secure network that does not use default credentials
 
 Both client and server devices will be updated regularly to include security patches 

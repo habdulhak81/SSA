@@ -6,14 +6,6 @@ Elizabeth Cook,
 Haseeb Abdulhak,
 Nils Linhoff
 
-
-
-### Introduction
-
-### Application
-
-### Method and testing
-
 # Objectives:
 This assignment is to demonstrate the interactions between a smart server device (server.py) and client device (client.py). 
 
@@ -56,6 +48,11 @@ Messages are transported using TCP in socket programming, SSL/TLS should be adde
 
 Data that is input into the client protype is validated and only certain data will be accepted. This prevents against SQL injection to the server and buffer overflow
 
+# Security Considerations
+The devices should be run using a secure network that does not use default credentials
+Both client and server devices will be updated regularly to include security patches 
+Remote access to the client application will force default password change and strong credentials 
+
 # Testing
 Full detail and screenshots of testing completed is available in the Code Testing file provided
 
@@ -71,24 +68,4 @@ Our design document stated the use of a speaker client device; however it was di
 # References
 Real Python (2022). Socket Programming in Python (Guide). Available at: https://realpython.com/python-sockets/ 
 
-
-
-
-
-
-=======
- Installation
-Install server.py and client.py files
-Install all libraries required
- 
-Run
-
-Assumptions 
-
-Security Features 
-
-Test
-
-References 
-Real Python (2022). Socket Programming in Python (Guide). Available at: https://realpython.com/python-sockets/ 
 
